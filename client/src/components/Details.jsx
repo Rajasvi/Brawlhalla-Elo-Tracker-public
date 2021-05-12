@@ -96,7 +96,7 @@ function GraphCard(props) {
                     <div class="card-body pb-0">
                         <h5 class="card-title font-weight-bold ">{props.teamData.brawl2v2TeamName}</h5>
                         <p class="card-text mb-4">
-                            {teamGamesInfo.tier} • {teamGamesInfo.wins}/{teamGamesInfo.games} wins
+                        <i class="fas fa-award"></i> {teamGamesInfo.tier} • {teamGamesInfo.wins}/{teamGamesInfo.games} wins
                         </p>
                         <div class="d-flex justify-content-between">
                             <p class="display-4 align-self-end mb-0 text-warning">{teamGamesInfo.rating}</p>

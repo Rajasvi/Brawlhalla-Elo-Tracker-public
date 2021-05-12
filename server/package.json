@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/app.js",
     "start:dev": "nodemon src/app",
-    "push:heroku": "git push heroku `git subtree split --prefix server react`:master"
+    "push:heroku": "git push heroku `git subtree split --prefix server branch_name`:master"
   },
   "author": "",
   "license": "ISC",

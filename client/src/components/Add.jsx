@@ -22,7 +22,7 @@ function BrawlhallaUserInfo({ brawlUserName }) {
             .then(
                 (data) => {
                     console.log(data);
-                    alert(`Successfully added tracker for: ${brawlUserName}`);
+                    alert(`Successfully added tracker for: ${brawlUserName}. Please check the graph for tracked username AFTER 10 minutes! `);
 
                     setBrawlUserInfo(data);
                     setStatus('resolved');
@@ -74,7 +74,7 @@ function Add() {
                                 <p>Brawlhalla username:</p>
                                 <input id="usernameInput" name="name" type="text" />
                             </label>
-                            <br></br>
+                            <br/><br/> 
                             <button type="submit" class="btn btn-primary">
                                 Submit
                             </button>
