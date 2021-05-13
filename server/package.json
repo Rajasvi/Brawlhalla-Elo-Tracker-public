@@ -5,9 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js",
-    "start:dev": "nodemon src/app",
-    "push:heroku:branch": "git push heroku `git subtree split --prefix server branch_name`:master",
-    "push:heroku:main": "git subtree push --prefix server heroku master"
+    "start:dev": "nodemon src/app"
   },
   "author": "",
   "license": "ISC",
