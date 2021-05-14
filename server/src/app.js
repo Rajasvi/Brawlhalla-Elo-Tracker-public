@@ -135,7 +135,6 @@ const job_tracker1v1 = new SimpleIntervalJob({ minutes: tracker1v1interval }, ta
 const job_tracker2v2 = new SimpleIntervalJob({ minutes: tracker2v2interval }, task_tracker2v2);
 scheduler.addSimpleIntervalJob(job_tracker1v1);
 scheduler.addSimpleIntervalJob(job_tracker2v2);
-// scheduler.stop()
 
 // routes
 app.get('/', (req, res) => {
