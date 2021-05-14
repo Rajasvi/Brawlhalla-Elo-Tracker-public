@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Moment from 'react-moment';
+import 'moment-timezone';
 
 function Home() {
     const [trackerList, setTrackerList] = useState([]);
@@ -10,7 +12,6 @@ function Home() {
             .then((res) => res.json())
             .then((result) => {
                 setTrackerList(result);
-                // console.log(result)
                 setIsLoaded(true);
             })
             .catch((err) => {
@@ -51,6 +52,7 @@ function Home() {
                                     >
                                         {tracker.playerName}
                                     </Link>
+                                    <p style={{"font-size":"14px"}} class="fw-lighter" >Last added: <Moment date={tracker.createdAt} format="YY-MM-DD hh:mm:ss"/></p>
                                 </ul>
                             </div>
                         ))}

@@ -23,7 +23,6 @@ function BrawlhallaUserInfo({ brawlUserName }) {
                 (data) => {
                     console.log(data);
                     alert(`Successfully added tracker for: ${brawlUserName}. Please check the graph for tracked username AFTER 10 minutes! `);
-
                     setBrawlUserInfo(data);
                     setStatus('resolved');
                 },
